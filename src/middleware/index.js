@@ -11,13 +11,12 @@ import routerPhoto from './router-photo.js'
 import errorHandler from './error-handler.js'
 import routerProfile from './router-profile.js'
 import bindResponseMethods from './bind-response-methods.js'
-import cors from './cors.js'
 
 // INTERFACE
 export default new Router()
 .use([
   // GLOBAL MIDDLEWARE
-  cors,
+  cors(),
   morgan('dev'),
   cookieParser(),
   bindResponseMethods,
