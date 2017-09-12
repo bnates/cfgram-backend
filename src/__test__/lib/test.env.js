@@ -1,5 +1,5 @@
 process.env.PORT = 7777
-process.env.MONGO_URI = 'mongodb://localhost/testing'
+process.env.MONGODB_URI = 'mongodb://localhost/testing'
 process.env.CORS_ORIGINS = `http://localhost:${process.env.PORT}`
 process.env.SECRET = 'cool beans'
 process.env.DEBUG = true
